@@ -424,6 +424,44 @@ function setup() {
 function draw() {
   background("lightblue");
 
+  if(gameState === "levels"){
+    lv1.y = 90
+    lv2.y = 90
+    lv3.y = 90
+    lv4.y = 90
+    lv5.y = 90
+    lv6.y = 90
+    lv7.y = 150
+    lv8.y = 150
+    lv9.y = 150
+    lv10.y = 150
+    lv11.y = 150
+    lv12.y = 150
+    lv13.y = 210
+    lv14.y = 210
+    lv15.y = 210
+    
+  }
+  
+  if(gameState !== "levels"){
+    lv1.y = 900
+    lv2.y = 900
+    lv3.y = 900
+    lv4.y = 900
+    lv5.y = 900
+    lv6.y = 900
+    lv7.y = 1500
+    lv8.y = 1500
+    lv9.y = 1500
+    lv10.y = 1500
+    lv11.y = 1500
+    lv12.y = 1500
+    lv13.y = 2100
+    lv14.y = 2100
+    lv15.y = 2100
+    
+  }
+  
   if (gameState === "level completed") {
     gameState = "levels"
   }
@@ -2335,10 +2373,10 @@ function showtext() {
     textSize(25)
     text("Free", 30, 220)
     text("$5", 130, 220)
-    text("$10", 230, 220)
-    text("$15", 330, 220)
-    text("$30", 430, 220)
-    text("$50", 530, 220)
+    text("$5", 230, 220)
+    text("$5", 330, 220)
+    text("$5", 430, 220)
+    text("$5", 530, 220)
   }
 
   //text for death
@@ -4334,7 +4372,7 @@ function changemenu() {
 function levels() {
   if (GP === 2 && gameState === "levels") {
     //level1
-    if (mousePressedOver(lv1) && GP === 2) {
+    if (mousePressedOver(lv1)&&gameState === "levels") {
       s1.play()
       jl1.y = 900
       jl2.y = 900
@@ -5251,7 +5289,7 @@ function buyskin() {
   //yellow
   if (mousePressedOver(b3) && gameState === "shop") {
 
-    if (cointo < 10) {
+    if (cointo < 5) {
       if (gameState === "shop") {
         textSize(25)
         fill("black")
@@ -5259,7 +5297,7 @@ function buyskin() {
 
       }
     }
-    if (cointo >= 10) {
+    if (cointo >= 5) {
       skinColor = "Yellow"
       yeow = 1
       b3.addImage(equip)
@@ -5271,7 +5309,7 @@ function buyskin() {
   //green
   if (mousePressedOver(b4) && gameState === "shop") {
 
-    if (cointo < 15) {
+    if (cointo < 5) {
       if (gameState === "shop") {
         textSize(25)
         fill("black")
@@ -5279,11 +5317,11 @@ function buyskin() {
 
       }
     }
-    if (cointo >= 30) {
+    if (cointo >= 5) {
       skinColor = "Green"
       grow = 1
       b4.addImage(equip)
-      cointo = cointo - 15
+      cointo = cointo - 5
       s2.play()
     }
   }
@@ -5291,7 +5329,7 @@ function buyskin() {
   //y
   if (mousePressedOver(b5) && gameState === "shop") {
 
-    if (cointo < 30) {
+    if (cointo < 5) {
       if (gameState === "shop") {
         textSize(25)
         fill("black")
@@ -5299,19 +5337,19 @@ function buyskin() {
 
       }
     }
-    if (cointo >= 30) {
+    if (cointo >= 5) {
       s2.play()
       skinColor = "Blue"
       buow = 1
       b5.addImage(equip)
-      cointo = cointo - 30
+      cointo = cointo - 5
     }
   }
 
   //blue
   if (mousePressedOver(b6) && gameState === "shop") {
 
-    if (cointo < 50) {
+    if (cointo < 5) {
       if (gameState === "shop") {
         textSize(25)
         fill("black")
@@ -5319,12 +5357,12 @@ function buyskin() {
 
       }
     }
-    if (cointo >= 50) {
+    if (cointo >= 5) {
       s2.play()
       skinColor = "Black"
       blow = 1
       b6.addImage(equip)
-      cointo = cointo - 50
+      cointo = cointo - 5
     }
   }
 }
