@@ -424,7 +424,7 @@ function setup() {
 function draw() {
   background("lightblue");
 
-  if(gameState === "levels"){
+  if (gameState === "levels") {
     lv1.y = 90
     lv2.y = 90
     lv3.y = 90
@@ -440,10 +440,10 @@ function draw() {
     lv13.y = 210
     lv14.y = 210
     lv15.y = 210
-    
+
   }
-  
-  if(gameState !== "levels"){
+
+  if (gameState !== "levels") {
     lv1.y = 900
     lv2.y = 900
     lv3.y = 900
@@ -459,9 +459,9 @@ function draw() {
     lv13.y = 2100
     lv14.y = 2100
     lv15.y = 2100
-    
+
   }
-  
+
   if (gameState === "level completed") {
     gameState = "levels"
   }
@@ -508,6 +508,12 @@ function draw() {
     m1.stop()
     if (level === 1) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -549,7 +555,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 1
       gameState = "play"
       GP = 3
@@ -580,6 +585,12 @@ function draw() {
 
     if (level === 2) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -612,7 +623,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 2
       gameState = "play"
       pl1.x = 150
@@ -649,6 +659,12 @@ function draw() {
 
     if (level === 3) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -681,7 +697,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 3
       gameState = "play"
       player.x = 150
@@ -720,6 +735,12 @@ function draw() {
 
     if (level === 4) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -745,7 +766,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 4
       gameState = "play"
       pl1.x = 150
@@ -778,6 +798,12 @@ function draw() {
 
     if (level === 5) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -803,7 +829,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 5
       gameState = "play"
       player.x = 150
@@ -837,6 +862,12 @@ function draw() {
 
     if (level === 6) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -856,7 +887,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 6
       gameState = "play"
       player.x = 150
@@ -887,6 +917,12 @@ function draw() {
 
     if (level === 7) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -906,7 +942,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 7
       gameState = "play"
       player.x = 150
@@ -945,6 +980,12 @@ function draw() {
 
     if (level === 8) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -964,7 +1005,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 8
       gameState = "play"
       player.x = 150
@@ -995,6 +1035,12 @@ function draw() {
 
     if (level === 9) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -1014,7 +1060,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 9
       gameState = "play"
       player.x = 150
@@ -1049,6 +1094,12 @@ function draw() {
 
     if (level === 10) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       lv1.visible = false
@@ -1066,7 +1117,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 10
       gameState = "play"
       player.x = 150
@@ -1110,6 +1160,12 @@ function draw() {
 
     if (level === 11) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       lv1.visible = false
@@ -1127,7 +1183,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 11
       gameState = "play"
       player.x = 150
@@ -1161,6 +1216,12 @@ function draw() {
 
     if (level === 12) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -1176,7 +1237,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 12
       gameState = "play"
       pl1.x = 150
@@ -1211,6 +1271,12 @@ function draw() {
 
     if (level === 13) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -1226,7 +1292,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 13
       gameState = "play"
       player.x = 150
@@ -1257,6 +1322,12 @@ function draw() {
 
     if (level === 14) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -1272,7 +1343,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 14
       gameState = "play"
       player.x = 150
@@ -1312,6 +1382,12 @@ function draw() {
 
     if (level === 15) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -1327,7 +1403,6 @@ function draw() {
       lv13.visible = false
       lv14.visible = false
       lv15.visible = false
-      object3.visible = false
       level = 15
       gameState = "play"
       player.x = 150
@@ -2075,13 +2150,20 @@ function draw() {
   if (player.isTouching(fa1)) {
     fa1.velocityY = 3
   }
-
+   else{
+     fa1.velocityY = 0
+   }
   if (player.isTouching(fa2)) {
     fa2.velocityY = 3
   }
-
+else{
+      fa2.velocityY = 0
+}
   if (player.isTouching(fa3)) {
     fa3.velocityY = 3
+  }
+  else{
+      fa3.velocityY = 0
   }
   if (level === 6) {
     if (ml1.y > 250) {
@@ -2313,7 +2395,6 @@ function draw() {
     lv13.visible = true
     lv14.visible = true
     lv15.visible = true
-    object3.visible = true
   }
 
   if (gameState === "died") {
@@ -2468,7 +2549,6 @@ function changemenu() {
     s1.play()
     gameState = "levels"
     GP = 2
-    object3.visible = true
     object1.visible = false
     object2.visible = false
     lv1.visible = true
@@ -2488,38 +2568,12 @@ function changemenu() {
     lv15.visible = true
     conub.visible = false
   }
-  //go back to menu from level
-  if (GP === 2 && mousePressedOver(object3)) {
-    s1.play()
-    gameState = "menu"
-    GP = 1
-    object3.visible = false
-    object1.visible = true
-    object2.visible = true
-    lv1.visible = false
-    lv2.visible = false
-    lv3.visible = false
-    lv4.visible = false
-    lv5.visible = false
-    lv6.visible = false
-    lv7.visible = false
-    lv8.visible = false
-    lv9.visible = false
-    lv10.visible = false
-    lv11.visible = false
-    lv12.visible = false
-    lv13.visible = false
-    lv14.visible = false
-    lv15.visible = false
-    conub.visible = false
-  }
 
   //go to shop
   if (GP === 1 && mousePressedOver(object2)) {
     s1.play()
     gameState = "shop"
     GP = 1.5
-    object3.visible = true
     object1.visible = false
     object2.visible = false
     lv1.visible = false
@@ -2562,30 +2616,7 @@ function changemenu() {
     conub.visible = false
   }
 
-  if (GP === 1.5 && mousePressedOver(object3)) {
-    s1.play()
-    gameState = "menu"
-    GP = 1
-    object3.visible = false
-    object1.visible = true
-    object2.visible = true
-    lv1.visible = false
-    lv2.visible = false
-    lv3.visible = false
-    lv4.visible = false
-    lv5.visible = false
-    lv6.visible = false
-    lv7.visible = false
-    lv8.visible = false
-    lv9.visible = false
-    lv10.visible = false
-    lv11.visible = false
-    lv12.visible = false
-    lv13.visible = false
-    lv14.visible = false
-    lv15.visible = false
-    conub.visible = false
-  }
+  
   if (mousePressedOver(b1) && GP === 1.5 && piow === 0) {
     piow = 1
   }
@@ -2609,6 +2640,12 @@ function changemenu() {
     gameState = "play"
     m1.stop()
     if (level === 1) {
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       s1.play()
       jl1.y = 900
       jl2.y = 900
@@ -2681,6 +2718,12 @@ function changemenu() {
     }
 
     if (level === 2) {
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       s1.play()
       jl1.y = 900
       jl2.y = 900
@@ -2751,7 +2794,12 @@ function changemenu() {
 
     if (level === 3) {
       s1.play()
-
+fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -2823,7 +2871,12 @@ function changemenu() {
 
     if (level === 4) {
       s1.play()
-
+fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -2882,6 +2935,12 @@ function changemenu() {
 
     if (level === 5) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -2941,6 +3000,12 @@ function changemenu() {
 
     if (level === 6) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -2991,6 +3056,12 @@ function changemenu() {
 
     if (level === 7) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -3049,6 +3120,12 @@ function changemenu() {
 
     if (level === 8) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -3099,6 +3176,12 @@ function changemenu() {
 
     if (level === 9) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       sl1.y = 900
@@ -3153,6 +3236,12 @@ function changemenu() {
 
     if (level === 10) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       lv1.visible = false
@@ -3214,6 +3303,12 @@ function changemenu() {
 
     if (level === 11) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       jl1.y = 900
       jl2.y = 900
       lv1.visible = false
@@ -3265,6 +3360,12 @@ function changemenu() {
 
     if (level === 12) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -3315,6 +3416,12 @@ function changemenu() {
 
     if (level === 13) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -3361,6 +3468,12 @@ function changemenu() {
 
     if (level === 14) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -3416,6 +3529,12 @@ function changemenu() {
 
     if (level === 15) {
       s1.play()
+      fa1.velocityY = 0
+      fa2.velocityY = 0
+      fa3.velocityY = 0
+      c1.velocityY = 0
+      c2.velocityY = 0
+      c3.velocityY = 0
       lv1.visible = false
       lv2.visible = false
       lv3.visible = false
@@ -4372,7 +4491,7 @@ function changemenu() {
 function levels() {
   if (GP === 2 && gameState === "levels") {
     //level1
-    if (mousePressedOver(lv1)&&gameState === "levels") {
+    if (mousePressedOver(lv1) && gameState === "levels") {
       s1.play()
       jl1.y = 900
       jl2.y = 900
