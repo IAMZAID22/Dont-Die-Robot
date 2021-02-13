@@ -423,15 +423,28 @@ function setup() {
 
 function draw() {
   background("lightblue");
-
-  if(gameState === "pasue"){
+  
+  if(gameState === "pause"){
     object8.visible = true
   }
   
   else{
     object8.visible = false
   }
+  if(gameState === "shop"){
+    object3.visible = true
+  }
+  else{
+    object3.visible = false
+  }
   
+  if(mousePressedOver(object3)&&gameState === "shop"){
+    gameState = "menu"
+    conub.visible = false
+    object1.visible = true
+    object2.visible = true
+    GP = 1
+  }
   if (gameState === "levels") {
     lv1.y = 90
     lv2.y = 90
