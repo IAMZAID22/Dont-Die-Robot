@@ -424,6 +424,14 @@ function setup() {
 function draw() {
   background("lightblue");
 
+  if(gameState === "pasue"){
+    object8.visible = true
+  }
+  
+  else{
+    object8.visible = false
+  }
+  
   if (gameState === "levels") {
     lv1.y = 90
     lv2.y = 90
