@@ -5420,7 +5420,7 @@ function buyskin() {
       skinColor = "Yellow"
       yeow = 1
       b3.addImage(equip)
-      cointo = cointo - 10
+      cointo = cointo - 5
       s2.play()
     }
   }
